@@ -44,7 +44,7 @@ const Skills = () => {
             <li>Perseverance</li>
             <li>Attention to Detail</li>
             <li>Critical Thinking</li>
-            <li>Organizational</li>
+            <li>Organization</li>
           </ul>
         </div>
       </div>

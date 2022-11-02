@@ -14,7 +14,7 @@ const Projects = () => {
 
     const [projects, setProjects] = useState(null)
 
-    const URL = "https://kelly-nelson-portfolio.herokuapp.com/projects"
+    const URL = "https://plushlamode.herokuapp.com/"
 
     const getProjects = async () => {
         const response = await fetch(URL);
@@ -65,9 +65,6 @@ const Projects = () => {
 
 
 
-
-
-
   return (
     <>
     {projects ? loaded() : loading()}
@@ -76,3 +73,6 @@ const Projects = () => {
 }
 
 export default Projects;
+
+
+

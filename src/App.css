@@ -10,7 +10,7 @@
 
 :root {
   --forest: #11201e;
-  --teal: #154042;
+  --teal: #494d4e;
   --mint: #d5e9dd;
   --pink: #decec8;
   --cloud: #d4d6d5;
@@ -54,7 +54,7 @@
   height: 100vh;
 }
 #home {
-  background-image: url(https://imgur.com/o9yV2lK.png);
+  background-image: url(https://i.imgur.com/KpfqYng.jpg);
   background-size: cover;
   display:flex;
   flex-direction: column;
@@ -75,8 +75,9 @@
 }
 #skills {
   height: 80vh;
-  background-image: url("https://imgur.com/x805nff.png");
-  background-size: cover;
+  /* background-image: url("https://i.imgur.com/zzPai1g.jpg");
+  background-size: cover; */
+  background-color:rgb(162, 119, 119) 
 }
 
 .about-container {
@@ -101,7 +102,7 @@
   height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url("https://imgur.com/x805nff.png");
+  background-image: url("https://i.imgur.com/hzjW1wX.jpg");
  
   /* display: flex;
   justify-content: center;
@@ -119,7 +120,7 @@
 
 
 nav {
-  background: rgba(145, 122, 131, 0.623);
+  background: rgba(157, 91, 116, 0.623);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -183,9 +184,9 @@ span {
 .a {
   background-image: linear-gradient(
     to right,
-    #7f8ec1,
-    #3484a1 50%,
-    #000 50%
+    #242527,
+    #1b1f20 50%,
+    rgb(186, 162, 162) 50%
   );
   background-size: 200% 100%;
   margin: 40px;
@@ -212,7 +213,7 @@ span {
 
 .a:before {
   content: '';
-  background: #246981;
+  background: #051b22;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -229,19 +230,6 @@ span {
 .a:hover::before {
   width:100%;
 }
-
-/* .contact-div {
-  position: relative; 
-   bottom: -160px; 
-  border: black solid 1px;
-  height: 100vh;
-  background-image: url("https://imgur.com/x805nff.png");
-  padding-top: 50px;
-  background-color: var(--cloud);
-  display: flex;
-  flex-direction: column;
-  width: 100%; 
-}  */
 
 
 form {
@@ -260,7 +248,7 @@ form {
     border: 1px solid rgb(220, 220, 220);
   }
   input:focus {
-    border: 2px solid rgb(1, 71, 68);
+    border: 2px solid rgb(120, 131, 130);
   }
 
   textarea {
@@ -276,7 +264,7 @@ form {
   }
 
     textarea:focus {
-      border: 2px solid rgb(1, 71, 68);
+      border: 2px solid rgb(170, 193, 192);
     }
     
   
@@ -318,7 +306,7 @@ form {
   }
 
   #contact-header {
-    background-image: url("https://imgur.com/x805nff.png");
+    background-image: url("https://i.imgur.com/hzjW1wX.jpg");
     margin-bottom: -10px;
     padding-top: 20px;
   }

@@ -64,9 +64,9 @@ const Contact = () => {
           <li><p  className="email">
             <MdOutlineMail /> jordintaylor095@gmail.com
           </p></li>
-          {/* <li><a className="a" href={CV} download>
+           {/* <li><a className="a" href={CV} download>
             <GrDocumentText /> Resume
-          </a></li> */}
+          </a></li>  */}
           </ul>
         </div>
       </div>
