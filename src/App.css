@@ -1,38 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;&display=swap');
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; 
+}
+
+:root {
+  --forest: #11201e;
+  --teal: #154042;
+  --mint: #d5e9dd;
+  --pink: #decec8;
+  --cloud: #d4d6d5;
+}
+
 .App {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.devsk-h1 {
+  margin-top: 0px;
+  position: relative;
+  top: -80px;
+  font-family: 'Raleway', sans-serif;
+}
+.skills-container {
+  position: relative;
+  top: 200px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#image-container img {
+  width: 80%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.skill-div {
   display: flex;
   flex-direction: column;
+  text-align: left;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+#home, #about {
+  height: 100vh;
+}
+#home {
+  background-image: url(https://imgur.com/o9yV2lK.png);
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.name {
+  font-family: 'Marck Script', cursive;
+  font-size: 100px;
+}
+.h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+}
+#about {
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  
+}
+#skills {
+  height: 80vh;
+  background-image: url("https://imgur.com/x805nff.png");
+  background-size: cover;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  position: relative;
+  top: 80px;
+}
+#about-text {
+  margin-right: 40px;
+  text-align: left;
+  
+}
+
+#about img {
+  border-radius: 100px;
+  /* border:var(--teal) 1px solid; */
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+#contact {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("https://imgur.com/x805nff.png");
+ 
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  
+}
+.contact-div {
+  margin-top: 60px;
+  display:flex;
+  justify-content: center;
+  padding-top: 20px;
+  
+}
+
+
+nav {
+  background: rgba(145, 122, 131, 0.623);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 40%;
+  color: var(--teal);
+  font-size: 1.4rem;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+nav a.active {
+  background: rgba(0, 0, 0, 0.536);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#projects {
+  position:relative;
+  top: 60px;
+  margin-bottom: 170px;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button1:hover {
+  background-color: #d5e9dd;
 }
+
+span {
+  color: rgb(207, 64, 88);
+  
+}
+.img-top {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  
+}
+.img-top:hover {
+  transform: scale(1.3);
+}
+.overflow {
+  overflow: hidden;
+}
+
+.a {
+  background-image: linear-gradient(
+    to right,
+    #7f8ec1,
+    #3484a1 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  margin: 40px;
+  width: max-content;
+  text-decoration: none;
+  color: var(--teal);
+  font-size: 18px;
+  background-position: -100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  position: relative;
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.email {
+  color: var(--teal);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.a:before {
+  content: '';
+  background: #246981;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.a:hover {
+ background-position: 0;
+}
+
+.a:hover::before {
+  width:100%;
+}
+
+/* .contact-div {
+  position: relative; 
+   bottom: -160px; 
+  border: black solid 1px;
+  height: 100vh;
+  background-image: url("https://imgur.com/x805nff.png");
+  padding-top: 50px;
+  background-color: var(--cloud);
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}  */
+
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+  input {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+  input:focus {
+    border: 2px solid rgb(1, 71, 68);
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+
+    textarea:focus {
+      border: 2px solid rgb(1, 71, 68);
+    }
+    
+  
+  label {
+    margin-top: 1rem;
+  }
+  input[type="submit"] {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: var(--teal);
+    color: white;
+    border: none;
+    width: 25%;
+    
+  }
+  input[type="submit"]:hover {
+    color: var(--teal);
+    background-color: var(--mint);
+    border: solid 2px var(--teal);
+  }
+
+  .form-div{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 20px;
+    margin-bottom: 60px;
+  }
+  
+  #icon-div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: left;
+
+    
+  }
+
+  #contact-header {
+    background-image: url("https://imgur.com/x805nff.png");
+    margin-bottom: -10px;
+    padding-top: 20px;
+  }
+
+  #footer {
+    text-align: right;
+  }
