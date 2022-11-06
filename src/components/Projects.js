@@ -9,7 +9,6 @@ import Row from 'react-bootstrap/Row';
 
 
 
-
 const Projects = () => {
 
     const [projects, setProjects] = useState(null)

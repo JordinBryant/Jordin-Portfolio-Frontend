@@ -10,10 +10,10 @@ const Skills = () => {
           <div className="skill-div">
             <h4>Front End</h4>
             <ul>
+              <li>HTML</li>
+              <li>CSS/SCSS/SASS</li>
               <li>JavaScript</li>
               <li>React.js</li>
-              <li>CSS / Sass</li>
-              <li>HTML</li>
               <li>jQuery</li>
               <li>Material-UI</li>
               <li>React-Bootstrap</li>
@@ -35,16 +35,13 @@ const Skills = () => {
             </ul>
           </div>
           <div className="skill-div">
-            <h4>Soft Skills</h4>
+            <h4>Test/Deployment</h4>
             <ul>
-              <li>Empathy</li>
-              <li>Communication</li>
-              <li>Teamwork</li>
-              <li>Problem-Solving</li>
-              <li>Perseverance</li>
-              <li>Attention to Detail</li>
-              <li>Critical Thinking</li>
-              <li>Organization</li>
+              <li></li>
+              <li>Chai/Mocha</li>
+              <li>Heroku</li>
+              <li>Docker</li>
+              <li>Netlify</li>
             </ul>
           </div>
         </div>
