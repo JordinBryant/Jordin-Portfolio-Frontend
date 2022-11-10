@@ -26,7 +26,7 @@
   margin-top: 0px;
   position: relative;
   top: -80px;
-  font-family: 'Raleway', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .skills-container {
@@ -56,6 +56,8 @@
   text-align: left;
   align-items: center;
   font-family:Georgia, 'Times New Roman', Times, serif;
+  border:double;
+  border-color: rgb(30, 5, 54);
 }
 
 #home,
@@ -88,10 +90,11 @@
 }
 
 #skills {
-  height: 80vh;
+  height: 70vh;
   /* background-image: url("https://i.imgur.com/zzPai1g.jpg"); */
   background-size: cover;
-  background-color: rgb(162, 119, 119)
+  background-color: rgb(162, 119, 119);
+  
 }
 
 .about-container {
@@ -115,18 +118,19 @@
 }
 
 #contact {
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url("https://i.imgur.com/hzjW1wX.jpg");
+  background-image: url("https://i.imgur.com/lP6qPk2.jpg");
+  background-size: cover;
 
 }
 
 .contact-div {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 10px;
 
 }
 
@@ -167,9 +171,9 @@ nav a.active {
 
 #projects {
   position:relative;
-  top: 60px;
-  margin-bottom: 90px;
-  align-self:stretch;
+  /* top: 60px; */
+  /* margin-bottom: 90px; */
+  align-self:center;
   background-color: rgb(173, 110, 88);
 } 
 
@@ -225,6 +229,7 @@ svg{
   display: flex;
   align-items: center;
   margin-left: 40px;
+  background-color: rgb(170, 162, 151);
 }
 
 .a:before {
@@ -326,9 +331,10 @@ input[type="submit"]:hover {
 }
 
 #contact-header {
-  background-image: url("https://i.imgur.com/hzjW1wX.jpg");
-  margin-bottom: -10px;
-  padding-top: 20px;
+  /* background-image: url("https://i.imgur.com/lP6qPk2.jpg"); */
+  /* margin-bottom: -10px;
+  padding-top: 20px; */
+  height: 10px;
 }
 
 
@@ -337,31 +343,62 @@ input[type="submit"]:hover {
 }
 
 .card-img-top.img-top.img-top {
-  height: 300px;
+  height: 250px;
   width: 500px;
   display: flex;
   flex-direction: row;
 
 }
 
-div.col{
+
+div.overflow {
   display: flex;
   flex-direction: row;
-}
-
-.overflow {
-  display: flex;
-  flex-direction: row;
+  height: 200px;
 
 }
+h1.devsk-h1{
+  font-family:'Raleway', sans-serif;
+}
+
 h2{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:fantasy;
   font-size:x-large;
   color: rgb(31, 3, 43);
 }
 
+h4{
+  font-family: fantasy;
+}
+
 h5 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: fantasy;
   font-size:larger;
   color: rgb(28, 5, 37);
+}
+
+.g-4{
+  
+    display: flex;
+    /* justify-content:center; */
+    flex-direction:row-reverse;
+    
+    
+}
+
+div.card{
+ margin: 5px;
+ justify-items: center;
+ 
+}
+
+div.card-body{
+padding-inline: 20px;
+
+
+}
+div.col{
+  width: 200vh;
+  margin:5px;
+
 }
