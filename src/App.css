@@ -379,26 +379,15 @@ h5 {
 
 .g-4{
   
-    display: flex;
-    /* justify-content:center; */
-    flex-direction:row-reverse;
-    
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 div.card{
  margin: 5px;
  justify-items: center;
+ padding: 30px;
  
 }
 
-div.card-body{
-padding-inline: 20px;
-
-
-}
-div.col{
-  width: 200vh;
-  margin:5px;
-
-}
