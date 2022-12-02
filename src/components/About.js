@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 
+var MediaQuery = require('react-responsive');
 const About = () => {
   return (
     <section id="about" >
